@@ -29,7 +29,6 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "WWW::ArsenalFC::TicketInformation",
   "PREREQ_PM" => {
-    "Data::Dumper" => 0,
     "Exporter" => 0,
     "HTML::TreeBuilder::XPath" => 0,
     "LWP::Simple" => 0,
@@ -38,7 +37,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.122590",
+  "VERSION" => "1.122600",
   "test" => {
     "TESTS" => "t/*.t"
   }

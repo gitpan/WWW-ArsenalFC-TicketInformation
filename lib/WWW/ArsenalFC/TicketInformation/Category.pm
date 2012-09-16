@@ -3,7 +3,7 @@ use warnings;
 
 package WWW::ArsenalFC::TicketInformation::Category;
 {
-  $WWW::ArsenalFC::TicketInformation::Category::VERSION = '1.122590';
+  $WWW::ArsenalFC::TicketInformation::Category::VERSION = '1.122600';
 }
 
 use WWW::ArsenalFC::TicketInformation::Util ':all';
@@ -40,7 +40,7 @@ WWW::ArsenalFC::TicketInformation::Category - Represents categories for upcoming
 
 =head1 VERSION
 
-version 1.122590
+version 1.122600
 
 =head1 ATTRIBUTES
 

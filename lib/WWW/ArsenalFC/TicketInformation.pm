@@ -4,7 +4,7 @@ use warnings;
 
 package WWW::ArsenalFC::TicketInformation;
 {
-  $WWW::ArsenalFC::TicketInformation::VERSION = '1.122590';
+  $WWW::ArsenalFC::TicketInformation::VERSION = '1.122600';
 }
 
 # ABSTRACT: Get Arsenal FC ticket information for forthcoming matches
@@ -15,8 +15,6 @@ use WWW::ArsenalFC::TicketInformation::Category;
 
 use LWP::Simple              ();
 use HTML::TreeBuilder::XPath ();
-
-use Data::Dumper;
 
 # the URL on Arsenal.com
 use constant URL => 'http://www.arsenal.com/membership/buy-tickets';
@@ -161,7 +159,7 @@ sub _fetch_matches {
                     push @{ $match{availability} },
                       WWW::ArsenalFC::TicketInformation::Match::Availability
                       ->new(
-                        membership => \@memberships_for_availability,
+                        memberships => \@memberships_for_availability,
                         type =>
                           WWW::ArsenalFC::TicketInformation::Match::Availability
                           ->FOR_SALE,
@@ -171,7 +169,7 @@ sub _fetch_matches {
                     push @{ $match{availability} },
                       WWW::ArsenalFC::TicketInformation::Match::Availability
                       ->new(
-                        membership => \@memberships_for_availability,
+                        memberships => \@memberships_for_availability,
                         type =>
                           WWW::ArsenalFC::TicketInformation::Match::Availability
                           ->SCHEDULED,
@@ -240,7 +238,7 @@ WWW::ArsenalFC::TicketInformation - Get Arsenal FC ticket information for forthc
 
 =head1 VERSION
 
-version 1.122590
+version 1.122600
 
 =head1 SYNOPSIS
 
@@ -277,6 +275,10 @@ An array reference of L<WWW::ArsenalFC::TicketInformation::Category> objects.
 
 Fetches and parses the Arsenal ticket information. Populates C<matches> and C<categories>.
 
+=head1 EXAMPLES
+
+An example of using this module to send out emails when tickets become available is available at https://gist.github.com/3728775.
+
 =head1 SEE ALSO
 
 =over 4
@@ -285,11 +287,11 @@ Fetches and parses the Arsenal ticket information. Populates C<matches> and C<ca
 
 L<WWW::ArsenalFC::TicketInformation::Match>
 
-  * L<WWW::ArsenalFC::TicketInformation::Category>
+=item *
+
+L<WWW::ArsenalFC::TicketInformation::Category>
 
 =back
-
-=cut
 
 =head1 AUTHOR
 

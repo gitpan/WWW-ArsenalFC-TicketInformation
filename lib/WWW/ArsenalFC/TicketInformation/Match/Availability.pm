@@ -3,7 +3,7 @@ use warnings;
 
 package WWW::ArsenalFC::TicketInformation::Match::Availability;
 {
-  $WWW::ArsenalFC::TicketInformation::Match::Availability::VERSION = '1.122590';
+  $WWW::ArsenalFC::TicketInformation::Match::Availability::VERSION = '1.122600';
 }
 
 # ABSTRACT: Represents the availability of a match ticket.
@@ -41,7 +41,7 @@ WWW::ArsenalFC::TicketInformation::Match::Availability - Represents the availabi
 
 =head1 VERSION
 
-version 1.122590
+version 1.122600
 
 =head1 ATTRIBUTES
 
@@ -59,7 +59,7 @@ The type of availibility. I.e. is it scheduled for release or for sale.
 
 Use as follows:
 
-  given ($availability) {
+  given ($availability->type) {
     when (WWW::ArsenalFC::TicketInformation::Match::Availability->SCHEDULED) {...}
     when (WWW::ArsenalFC::TicketInformation::Match::Availability->FOR_SALE) {...}
   }

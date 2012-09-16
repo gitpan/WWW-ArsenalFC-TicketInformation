@@ -3,7 +3,7 @@ use warnings;
 
 package WWW::ArsenalFC::TicketInformation::Util;
 {
-  $WWW::ArsenalFC::TicketInformation::Util::VERSION = '1.122590';
+  $WWW::ArsenalFC::TicketInformation::Util::VERSION = '1.122600';
 }
 
 # ABSTRACT: Utility methods
@@ -36,15 +36,13 @@ WWW::ArsenalFC::TicketInformation::Util - Utility methods
 
 =head1 VERSION
 
-version 1.122590
+version 1.122600
 
 =head1 METHODS
 
 =head2 month_to_number($month)
 
 Convert the month name to the month number.
-
-=cut
 
 =head1 AUTHOR
 
