@@ -7,6 +7,7 @@ build_requires:
   File::Find: 0
   File::Temp: 0
   FindBin: 0
+  HTTP::Online: 0
   Net::Ping: 2.33
   Test::Deep: 0
   Test::More: 0.88
@@ -33,4 +34,4 @@ resources:
   bugtracker: https://github.com/andrewrjones/perl5-WWW-ArsenalFC-TicketInformation/issues
   homepage: https://github.com/andrewrjones/perl5-WWW-ArsenalFC-TicketInformation
   repository: https://github.com/andrewrjones/perl5-WWW-ArsenalFC-TicketInformation.git
-version: 1.122600
+version: 1.123160

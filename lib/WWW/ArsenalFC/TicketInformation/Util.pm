@@ -3,7 +3,7 @@ use warnings;
 
 package WWW::ArsenalFC::TicketInformation::Util;
 {
-  $WWW::ArsenalFC::TicketInformation::Util::VERSION = '1.122600';
+  $WWW::ArsenalFC::TicketInformation::Util::VERSION = '1.123160';
 }
 
 # ABSTRACT: Utility methods
@@ -36,7 +36,7 @@ WWW::ArsenalFC::TicketInformation::Util - Utility methods
 
 =head1 VERSION
 
-version 1.122600
+version 1.123160
 
 =head1 METHODS
 

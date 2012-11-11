@@ -3,7 +3,7 @@ use warnings;
 
 package WWW::ArsenalFC::TicketInformation::Match;
 {
-  $WWW::ArsenalFC::TicketInformation::Match::VERSION = '1.122600';
+  $WWW::ArsenalFC::TicketInformation::Match::VERSION = '1.123160';
 }
 
 use WWW::ArsenalFC::TicketInformation::Match::Availability;
@@ -74,7 +74,7 @@ WWW::ArsenalFC::TicketInformation::Match - Represents an Arsenal match with tick
 
 =head1 VERSION
 
-version 1.122600
+version 1.123160
 
 =head1 ATTRIBUTES
 

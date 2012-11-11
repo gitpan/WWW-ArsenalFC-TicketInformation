@@ -4,7 +4,7 @@ use warnings;
 
 package WWW::ArsenalFC::TicketInformation;
 {
-  $WWW::ArsenalFC::TicketInformation::VERSION = '1.122600';
+  $WWW::ArsenalFC::TicketInformation::VERSION = '1.123160';
 }
 
 # ABSTRACT: Get Arsenal FC ticket information for forthcoming matches
@@ -238,7 +238,7 @@ WWW::ArsenalFC::TicketInformation - Get Arsenal FC ticket information for forthc
 
 =head1 VERSION
 
-version 1.122600
+version 1.123160
 
 =head1 SYNOPSIS
 
